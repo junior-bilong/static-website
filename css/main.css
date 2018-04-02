@@ -1,0 +1,170 @@
+body{
+	background: #f7f7f7;
+	font-family: "Lato", sans-serif;
+}
+
+/**containerof the page **************************************/
+.container {
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden; /* Disable horizontal scroll */
+	overflow-y: hidden;
+}
+
+
+/**************************************************
+***************************************************
+ Side bar
+ *************************************************
+ *************************************************/
+
+ /* The sidebar menu */
+aside {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 120px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #cc0000; /* Red */
+    overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+/* The navigation menu links */
+aside div {
+	height: 110px;
+	width: 100%;
+	line-height: 110px; /*center text*/
+	text-align: center; /*center text*/
+	border-bottom: solid 1px #cdcdcd;
+}
+aside div a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+aside div:hover {
+	background: #FEC500;
+    color: #f1f1f1;
+}
+
+
+/***************************************************************
+		wrapper style
+****************************************************************/		
+
+.wrapper {
+	margin-left: 120px;
+}
+
+.page-header {
+	padding: 10px;
+	padding-bottom: 40px;
+	background: #3d3d3d;
+	overflow-y: hidden !important;
+}
+
+.contact {
+	margin-bottom: 30px;
+}
+
+.main-logo {
+	width: 30%;
+}
+
+.header-info {
+	color: #fff;
+	font-size: 15px;
+	margin-right: 25px;
+}
+
+header img {
+    float:left;
+ }
+
+#logo {
+  height: 60px;
+  vertical-align: middle;
+}
+
+header nav {
+    float:right;
+    margin-top:16px;
+    color: #fff;
+}
+
+.push-right {
+	float: right;
+}
+
+header nav ul li {
+    display: inline;
+    padding: 8px 12px 8px 12px;
+}
+header nav ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+ .facebook {
+	background: #3b5998;
+ }
+
+ .twitter {
+ 	background: #00aced;
+ }
+
+ .google {
+ 	background: #d34836;
+ }
+
+ .whatapps {
+ 	background: #4caf50;
+ }
+
+
+/**************************************************************
+
+         Content Image
+
+************************************************************/
+.content {
+	width: 100%;
+}
+
+.row {
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+strong{
+	font-weight: 600;
+}
+
+.content-image {
+	float: left;
+	width: 400px;
+}
+
+.side-image {
+	display: block;
+	width: 100%;
+}
+
+div .content-text {
+	float: right;
+	margin-left: 400px;
+	margin-top: -585px;
+	padding: 40px;
+}
+
+h1 {
+	 font-size: 30px;
+	 margin: 15px 0 15px 0;
+}
+
+p{
+	font-size: 18px;
+}
