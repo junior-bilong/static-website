@@ -13,9 +13,7 @@ body{
 
 
 /**************************************************
-***************************************************
  Side bar
- *************************************************
  *************************************************/
 
  /* The sidebar menu */
@@ -38,6 +36,9 @@ aside div {
 	text-align: center; /*center text*/
 	border-bottom: solid 1px #cdcdcd;
 }
+
+
+
 aside div a {
     text-decoration: none;
     font-size: 20px;
@@ -62,7 +63,7 @@ aside div:hover {
 
 .page-header {
 	padding: 10px;
-	padding-bottom: 40px;
+	padding-bottom: 20px;
 	background: #3d3d3d;
 	overflow-y: hidden !important;
 }
@@ -160,11 +161,76 @@ div .content-text {
 	padding: 40px;
 }
 
+.home-content {
+	width: 100%;
+}
+
+.home-logo {
+	padding-top: 40px 0 40px 0;
+	background: #3d3d3d;
+	width: 500px;
+}
+.home-trending {
+ background: #003663;
+ color: #fff;
+ width: 500px;
+ height: 600px;
+}
+
+.home-image {
+	float: right; 
+	margin-left: 500px; 
+	margin-top: -800px
+}
+
+.article-image {
+	display: block; 
+	width: 100%;
+}
+
+.logo {
+	margin: 40px 0 40px 10px;
+}
+
 h1 {
 	 font-size: 30px;
 	 margin: 15px 0 15px 0;
 }
 
-p{
+h2 {
+	font-size: 24px;
+	margin-bottom: 10px 0 10px 0;
+}
+
+h3 {
 	font-size: 18px;
+	margin-bottom: 8px 0 8px 0;
+}
+
+p{
+	font-size: 14px;
+}
+
+
+
+.custom-counter {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.custom-counter li {
+  counter-increment: step-counter;
+  margin-bottom: 10px;
+}
+
+.custom-counter li::before {
+  content: counter(step-counter);
+  margin-right: 5px;
+  font-size: 80%;
+  background-color: #3d3d3d;
+  color: #f0c419;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 3px;
 }
