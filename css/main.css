@@ -1,6 +1,6 @@
 body{
 	background: #f7f7f7;
-	font-family: "Lato", sans-serif;
+	font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
 }
 
 /**containerof the page **************************************/
@@ -40,10 +40,10 @@ aside div {
 
 
 aside div a {
-    text-decoration: none;
-    font-size: 20px;
+    text-decoration: none; /* To avoid the default style of an a tag*/
+    font-size: 20px; 
     color: #fff;
-    display: block;
+    display: block; /* give them a display of block to make sure there appear line after line*/
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -56,24 +56,19 @@ aside div:hover {
 /***************************************************************
 		wrapper style
 ****************************************************************/		
-
 .wrapper {
 	margin-left: 120px;
 }
 
+/*****************************************************
+***********  Header of the page  ********************/
+
 .page-header {
-	padding: 10px;
+	padding: 10px; 
 	padding-bottom: 20px;
 	background: #3d3d3d;
-	overflow-y: hidden !important;
-}
-
-.contact {
-	margin-bottom: 30px;
-}
-
-.main-logo {
-	width: 30%;
+	overflow-y: hidden !important;  
+	/* the !important property here means it's specifity become the highest*/
 }
 
 .header-info {
@@ -82,6 +77,145 @@ aside div:hover {
 	margin-right: 25px;
 }
 
+
+/*******************************************************************
+***********  home page main header of the page  ********************/
+
+.home-content {
+	width: 100%;
+}
+
+.home-logo {
+	background: #3d3d3d;
+	width: 500px;
+}
+
+.home-trending {
+ background: #003663;
+ color: #fff;
+ max-width: 490px;
+ height: 600px;
+ padding-left: 10px;
+ padding-top: 10px;
+ margin-top: -20px;
+}
+
+.logo {
+	margin: 40px 0 40px 10px;
+}
+
+/**************************************************************************
+***********  the custom list item under the trending  ********************/
+
+.custom-counter {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.custom-counter li {
+  counter-increment: step-counter;
+  margin-bottom: 10px;
+}
+.custom-counter li::before {
+  content: counter(step-counter);
+  margin-right: 5px;
+  font-size: 80%;
+  background-color: #3d3d3d;
+  color: #f0c419;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 3px;
+}
+
+
+/************************************************
+***********  Homoe content  ********************/
+.home-article {
+	float: right; 
+	margin-left: 500px; 
+	margin-top: -750px;
+	position: relative;
+}
+
+.article-image {
+	display: block; 
+	width: 100%;
+}
+
+.talent {
+	font-size: 4em;
+	color: #fff;
+	position: absolute;
+	bottom: 60px;
+	left: 20px;
+	padding: 20px;
+	background-color: rgb(0, 0, 0, .3);
+}
+
+.readmore {
+	position: absolute;
+	bottom: 20px; left: 20px;
+	padding: 10px 20px 10px 20px;
+	background: #FEC500;color: #222;
+	border: none; text-decoration: none;
+	font-weight: 800;
+}
+
+/*********************************************
+/* typography styling **********************/
+
+h1 {
+	 font-size: 30px;
+	 margin: 15px 0 15px 0;
+}
+
+h2 {
+	font-size: 24px;
+	margin-bottom: 10px 0 10px 0;
+}
+
+h3 {
+	font-size: 18px;
+	margin-bottom: 8px 0 8px 0;
+}
+
+p{
+	font-size: 14px;
+}
+
+/*content*/
+.content {
+	width: 100%;
+}
+
+.row {
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+strong{
+	font-weight: 600;
+}
+
+
+/*****************************************************
+***********  Header of the page  ********************/
+.side-image {
+	display: block;
+	width: 100%;
+}
+
+div .content-text {
+	float: right;
+	margin-left: 400px;
+	margin-top: -700px;
+	padding: 40px;
+}
+
+.content-image {
+	float: left;
+	width: 400px;
+}
 header img {
     float:left;
  }
@@ -124,113 +258,3 @@ header nav ul li a{
  .whatapps {
  	background: #4caf50;
  }
-
-
-/**************************************************************
-
-         Content Image
-
-************************************************************/
-.content {
-	width: 100%;
-}
-
-.row {
-	margin-right: 20px;
-	margin-left: 20px;
-}
-
-strong{
-	font-weight: 600;
-}
-
-.content-image {
-	float: left;
-	width: 400px;
-}
-
-.side-image {
-	display: block;
-	width: 100%;
-}
-
-div .content-text {
-	float: right;
-	margin-left: 400px;
-	margin-top: -585px;
-	padding: 40px;
-}
-
-.home-content {
-	width: 100%;
-}
-
-.home-logo {
-	padding-top: 40px 0 40px 0;
-	background: #3d3d3d;
-	width: 500px;
-}
-.home-trending {
- background: #003663;
- color: #fff;
- width: 500px;
- height: 600px;
-}
-
-.home-image {
-	float: right; 
-	margin-left: 500px; 
-	margin-top: -800px
-}
-
-.article-image {
-	display: block; 
-	width: 100%;
-}
-
-.logo {
-	margin: 40px 0 40px 10px;
-}
-
-h1 {
-	 font-size: 30px;
-	 margin: 15px 0 15px 0;
-}
-
-h2 {
-	font-size: 24px;
-	margin-bottom: 10px 0 10px 0;
-}
-
-h3 {
-	font-size: 18px;
-	margin-bottom: 8px 0 8px 0;
-}
-
-p{
-	font-size: 14px;
-}
-
-
-
-.custom-counter {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.custom-counter li {
-  counter-increment: step-counter;
-  margin-bottom: 10px;
-}
-
-.custom-counter li::before {
-  content: counter(step-counter);
-  margin-right: 5px;
-  font-size: 80%;
-  background-color: #3d3d3d;
-  color: #f0c419;
-  font-weight: bold;
-  padding: 3px 8px;
-  border-radius: 3px;
-}
