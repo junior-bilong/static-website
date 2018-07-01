@@ -1,3 +1,5 @@
 # static-website
 
-some instaruction here
+some instruction here
+
+another instsructions
